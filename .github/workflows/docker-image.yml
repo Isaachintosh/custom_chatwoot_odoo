@@ -24,5 +24,5 @@ jobs:
 
       - name: Build Docker Image for Chatwoot/Odoo
         run: |
-          docker buildx build --platform linux/amd64 -t aosdevs/odoocast:chatwoot_app.v1.0 docker/
+          docker buildx build --platform linux/amd64 -t aosdevs/odoocast:chatwoot_app.v1.0 .
           docker push aosdevs/odoocast:chatwoot_app.v1.0
